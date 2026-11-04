@@ -156,5 +156,6 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     cssMinify: true,
+    rollupOptions: { input: [resolve('index.html'), resolve('inference.html')] },
   },
 });
