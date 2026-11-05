@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "test": "node --test"
+    "build": "vite build"
   },
   "type": "module",
   "devDependencies": {
