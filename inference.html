@@ -90,11 +90,11 @@
                 </dd>
               </div>
               <div class="t-row">
-                <dt>Disk</dt>
+                <dt>Stored data</dt>
                 <dd><span class="t-track" aria-hidden="true"></span><span class="t-status">Never</span></dd>
               </div>
               <div class="t-row">
-                <dt>Logs</dt>
+                <dt>Content Logs</dt>
                 <dd><span class="t-track" aria-hidden="true"></span><span class="t-status">Never</span></dd>
               </div>
               <div class="t-row">
@@ -112,7 +112,7 @@
             <div class="t-overlay" aria-hidden="true"><i class="t-split"></i><i class="t-head"></i></div>
           </div>
           <p class="mt-5 border-t border-stone-300 pt-4 text-sm leading-relaxed text-pretty text-gray-600">
-            Kept for billing: API key ID, model, token counts and request time.
+            Kept for billing: API key ID, model, token counts and request time. Read more in our <a href="#">Privacy policy</a>.
           </p>
         </figure>
         <script>
@@ -214,7 +214,7 @@
           </h2>
           <ul class="mt-10 grid gap-x-10 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
             <li class="border-t border-gray-200 py-6">
-              <h3 class="font-outfit text-lg font-semibold">Confidential translations</h3>
+              <h3 class="font-outfit text-lg font-semibold">Private translations</h3>
               <p class="mt-1.5 text-gray-600">Contracts, filings and board memos, with no copy kept.</p>
             </li>
             <li class="border-t border-gray-200 py-6">
@@ -237,7 +237,22 @@
               <h3 class="font-outfit text-lg font-semibold">Coding assistants</h3>
               <p class="mt-1.5 text-gray-600">Your codebase is never stored or used for training.</p>
             </li>
+            <li class="border-t border-gray-200 py-6">
+              <h3 class="font-outfit text-lg font-semibold">Public sector</h3>
+              <p class="mt-1.5 text-gray-600">Citizen requests, case files and permit applications never leave the EU.</p>
+            </li>
+            <li class="border-t border-gray-200 py-6">
+              <h3 class="font-outfit text-lg font-semibold">Customer support</h3>
+              <p class="mt-1.5 text-gray-600">Tickets, chats and call transcripts, answered and never stored.</p>
+            </li>
+            <li class="border-t border-gray-200 py-6">
+              <h3 class="font-outfit text-lg font-semibold">Patent drafting</h3>
+              <p class="mt-1.5 text-gray-600">Invention disclosures, prior-art searches and draft claims stay secret until you file.</p>
+            </li>
           </ul>
+          <p class="mx-auto mt-14 max-w-3xl text-center font-display text-[clamp(1.75rem,5vw,2.75rem)] leading-tight text-balance italic lg:mt-20">
+            “Loose lips <span class="ul decoration-amber">sink ships</span>.”
+          </p>
         </div>
       </section>
 
@@ -265,62 +280,93 @@
             </p>
           </div>
 
-          <div class="mt-6 grid gap-5 lg:grid-cols-2">
+          <div class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-2">
             <article class="flex flex-col rounded-3xl bg-box p-5 sm:p-8">
-              <h3 class="font-outfit text-2xl font-semibold">Shared API</h3>
+              <h3 id="shared-api" class="font-outfit text-2xl font-semibold">
+                Pay-as-you-go API
+                <span class="badge badge-blue">
+                  <svg aria-hidden="true" viewBox="0 0 30 20" class="inline-block h-[1em] w-auto align-[-0.15em]">
+                    <rect width="30" height="20" fill="#039" />
+                    <!-- The 12 stars as dots: zero-length round-capped dashes, 1/12 of the circumference (2π × 6.667) apart. -->
+                    <circle cx="15" cy="10" r="6.667" fill="none" stroke="#fc0" stroke-width="2" stroke-dasharray="0 3.4908" stroke-linecap="round" />
+                  </svg>
+                  EU-hosted
+                </span>
+              </h3>
               <p class="mt-2 text-gray-600">Fast and cheap. Pay only for the tokens you use.</p>
               <p class="mt-4 flex flex-wrap items-center gap-1.5 text-sm text-gray-600">
                 All models:
-                <span class="tag">text</span><span class="tag">code</span><span class="tag">tool calling</span
-                ><span class="tag">reasoning</span>
+                <span class="tag">GDPR compliant</span><span class="tag">zero data retention</span><span class="tag">text</span
+                ><span class="tag">code</span><span class="tag">tool calling</span><span class="tag">reasoning</span>
               </p>
-              <table class="price mt-6">
-                <caption>
-                  Per 1M tokens in <span data-currency>EUR</span>, excl. VAT
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Model</th>
-                    <th scope="col">Input</th>
-                    <th scope="col">Output</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      <span class="model">GLM-5.3</span>
-                      <span class="tags">Z.ai <span class="tag">754B</span><span class="tag">fp4</span><span class="tag">1M context</span></span>
-                    </th>
-                    <td data-eur>1.29</td>
-                    <td data-eur>3.15</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <span class="model">GLM-5.3 Flash <span class="recommended">Recommended</span></span>
-                      <span class="tags">Z.ai <span class="tag">753B</span><span class="tag">fp8</span><span class="tag">1.3M context</span></span>
-                    </th>
-                    <td data-eur>0.19</td>
-                    <td data-eur>0.45</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <span class="model">DeepSeek-V4 Flash 0731</span>
-                      <span class="tags">DeepSeek <span class="tag">284B</span><span class="tag">fp4</span><span class="tag">1M context</span></span>
-                    </th>
-                    <td data-eur>0.18</td>
-                    <td data-eur>0.52</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="mt-6 overflow-x-auto" role="region" aria-labelledby="shared-api" tabindex="0">
+                <table class="price">
+                  <caption>
+                    <b>Per 1 Million tokens in <span data-currency>EUR</span>, excl. VAT</b>
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Model</th>
+                      <th scope="col">Input</th>
+                      <th scope="col">Output</th>
+                      <th scope="col">Cache</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <span class="model">Kimi K3.1 Pro</span>
+                        <span class="tags">Moonshot AI <span class="tag">2.8T</span><span class="tag">vision</span></span>
+                      </th>
+                      <td data-eur>2.00</td>
+                      <td data-eur>10.00</td>
+                      <td data-eur>0.20</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <span class="model">GLM-5.3</span>
+                        <span class="tags">Z.ai <span class="tag">754B</span><span class="tag">fp4</span><span class="tag">1M context</span></span>
+                      </th>
+                      <td data-eur>1.29</td>
+                      <td data-eur>3.15</td>
+                      <td data-eur>0.15</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <span class="model">GLM-5.3 Flash <span class="badge">Recommended</span></span>
+                        <span class="tags">Z.ai <span class="tag">320B</span><span class="tag">fp8</span><span class="tag">1.3M context</span></span>
+                      </th>
+                      <td data-eur>0.19</td>
+                      <td data-eur>0.45</td>
+                      <td data-eur>0.04</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <span class="model">DeepSeek-V4 Flash 0731</span>
+                        <span class="tags">DeepSeek <span class="tag">284B</span><span class="tag">fp4</span><span class="tag">1M context</span></span>
+                      </th>
+                      <td data-eur>0.18</td>
+                      <td data-eur>0.52</td>
+                      <td data-eur>0.03</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="mt-auto pt-8">
                 <a class="btn btn-ink w-full" href="mailto:inference@thinking.tools?subject=API%20access">Request API access</a>
               </div>
             </article>
 
             <article class="flex flex-col rounded-3xl bg-box p-5 sm:p-8">
-              <h3 class="font-outfit text-2xl font-semibold">Dedicated machine</h3>
+              <h3 class="font-outfit text-2xl font-semibold">
+                Dedicated deployments <span class="badge badge-green">Unlimited tokens</span>
+              </h3>
               <p class="mt-2 text-gray-600">
                 A GPU server only you use. Run any open model, or your own <span class="whitespace-nowrap">fine-tune</span>.
+              </p>
+              <p class="mt-4 flex flex-wrap items-center gap-1.5 text-sm text-gray-600">
+                Sustainable option:
+                <span class="tag">100% renewable energy</span>
               </p>
               <table class="price mt-6">
                 <caption>
@@ -330,7 +376,7 @@
                   <tr>
                     <th scope="col">Machine</th>
                     <th scope="col">GPU memory</th>
-                    <th scope="col" class="w-[5.5rem]">Price</th>
+                    <th scope="col" class="w-[6rem]">Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -340,14 +386,14 @@
                     <td data-eur>2,400</td>
                   </tr>
                   <tr>
-                    <th scope="row">2× H200</th>
-                    <td>282 GB</td>
-                    <td data-eur>4,700</td>
+                    <th scope="row">4× B200</th>
+                    <td>720 GB</td>
+                    <td data-eur>23,500</td>
                   </tr>
                   <tr>
-                    <th scope="row">8× H200</th>
-                    <td>1,128 GB</td>
-                    <td data-eur>17,900</td>
+                    <th scope="row">8× B300 SXM6</th>
+                    <td>2,304 GB</td>
+                    <td data-eur>60,000</td>
                   </tr>
                 </tbody>
               </table>
